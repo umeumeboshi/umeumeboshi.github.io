@@ -1,0 +1,219 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-color:#fff;
+}
+
+
+
+
+
+#page_top{
+  width: 70px; height: 70px;
+  position: fixed; right: 0px; bottom: 0px;
+  opacity: 0.5; background: #3f98ef;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+#page_top a::after{
+  content: 'TOP';
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: aliceblue;
+}
+
+
+
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 18px 4% 10px;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+header h1{
+  display: flex;
+  margin: 0; padding: 0;
+  font-size: 20px; text-decoration: none; color:#eee;
+}
+header a{
+  text-decoration: none;
+  color:#eee;
+}
+header ul{
+  list-style: none; margin: 0; display: flex;
+  position:relative;
+}
+header li{
+  margin: 0 0 0 20px;
+  font-size: 14px;
+}
+header nav{
+  margin: 0 0 0 auto;
+  position: relative;
+}
+
+#topimg img{
+  position :relative;
+  text-align: center;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+  header h1{
+    display: flex;
+    margin: 0; padding: 0;
+    font-size: 15px; text-decoration: none; color:#eee;
+  }
+  header li{
+    margin: 0 0 0 8px;
+    font-size: 8px;
+  }
+  header nav{
+    margin: 0 0 0 auto;
+    position: relative;
+  }
+  #topimg img{
+    position :relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+
+
+
+
+
+
+.same{
+  padding-top: 20px;
+  position: relative;
+  height: 250px;
+}
+.same img{
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  max-height: 220px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+
+
+h3{
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+
+
+h2{
+  position: relative;
+  margin-top: 40px;
+  margin-left: 30px; margin-right: 30px;
+}
+
+h2 a{
+  position:relative;
+  padding: 1rem 10px;
+  margin: 1rem 10px;
+}
+
+div{
+  margin-left: 45px;
+  margin-right: 45px;
+}
+#topimg{
+  margin-left: 0;
+  margin-right: 0;
+}
+#page_top{
+  margin-right: 0;
+}
+
+
+
+#img_okashi{
+  padding-top: 20px;
+  width: 30%;
+  object-fit: cover;
+}
+
+
+
+
+#about::after {
+  margin: 0; position: absolute;
+  top:35px; bottom: 0; left: 0; width: 100%; height: 5px; content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+#profile::after {
+  margin: 0; position: absolute;
+  top:35px; bottom: 0; left: 0; width: 100%; height: 5px; content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(#fee140), to(#acfc00));
+  background-image: -webkit-linear-gradient(left, #fee140 0%, #acfc00 100%);
+  background-image: linear-gradient(to right, #fee140 0%, #acfc00 100%);
+}
+#interests::after {
+  margin: 0; position: absolute;
+  top:35px; bottom: 0; left: 0; width: 100%; height: 5px; content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(#acfc00), to(#7aebff));
+  background-image: -webkit-linear-gradient(left, #acfc00 0%, #7aebff 100%);
+  background-image: linear-gradient(to right, #acfc00 0%, #7aebff 100%);
+}
+#contact::after {
+  margin: 0; position: absolute;
+  top:35px; bottom: 0; left: 0; width: 100%; height: 5px; content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(#7aebff), to(#ddb5ff));
+  background-image: -webkit-linear-gradient(left, #7aebff 0%, #ddb5ff 100%);
+  background-image: linear-gradient(to right, #7aebff 0%, #ddb5ff 100%);
+}
+#map {
+  margin-top: 20px; margin-bottom: 40px; margin-left: 50px;
+}
+
+
+
+footer{
+  position: relative;
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+

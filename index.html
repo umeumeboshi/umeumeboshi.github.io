@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mypage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <title>Hiroka Umetsu Web site</title>
+  <meta name="author" content="Hiroka Umetsu">
+
+</head>
+<script>
+  window.addEventListener('load',function(){
+    slideShow('.same img',);
+  });
+  function slideShow(className, slideNum=-1){
+    let imgArray=document.querySelectorAll(className);
+    //現在のスライドを消す
+    if(slideNum>=0){
+      imgArray[slideNum].style.opacity=0;
+    }
+    //次のスライドがなければ先頭へ
+    slideNum++;
+    if(slideNum>=imgArray.length){
+      slideNum=0;
+    }
+    //次のスライドを表示
+    imgArray[slideNum].style.opacity=1;
+    setTimeout(function(){slideShow(className, slideNum);},5000);
+  }
+</script>
+
+<body>
+  
+
+  <header>
+    <h1>Hiroka.U</h1>
+  
+    <nav class="pc-nav">
+      <ul>
+        <li><a href="#aboutlink">ABOUT</a></li>
+        <li><a href="#profilelink">PROFILE</a></li>
+        <li><a href="#interestslink">INTERESTS</a></li>
+        <li><a href="#contactlink">CONTACT</a></li>
+      <ul>
+    </nav>
+  </header>
+      <div id="topimg"><img src="./フルーツパイ.JPG"></div>
+  
+  <main>
+    <h2 id="about"><a id="aboutlink">ABOUT</a></h2>
+    <div>
+      梅津 寛香と申します。2021年度、電通大の柏原研に配属された4年生です。<br>
+      研究などさまざま頑張ろうと思っているので、よろしくお願い致します。<br>
+      サメちゃんと一緒に暮らしています。
+    </div>
+
+    <div class="same">
+      <img src="./サメ1.JPG">
+      <img src="./サメ2.JPG">
+      <img src="./サメ3.JPG">
+      <img src="./サメ4.JPG">
+    </div>
+
+    <h2 id="profile"><a id="profilelink">PROFILE</a></h2>
+    <div id="background">
+      <h3>略歴</h3>
+      2018年 3月 吉祥女子高等学校 卒業<br>
+      2018年 4月 電気通信大学 入学<br>
+      2021年 4月現在 電気通信大学在学中
+    </div>
+    <div id="belonging">
+      <h3>所属</h3>
+      電気通信大学 I類 メディア情報学プログラム<br>
+      <a href="https://wlgate.inf.uec.ac.jp/">柏原研究室</a> 所属<br>
+      <a href="https://www.dhk.jp/">電気通信大学放送研究会(D.H.K.)</a> 所属
+    </div>
+
+    <h2 id="interests"><a id="interestslink">INTERESTS</a></h2>
+    <div id="illustrations">
+      趣味はお絵かきとお菓子作りです。<br>
+      お絵かき：版権イラストを描くことが多いです。<br>
+    </div>
+    <div id="cooking">
+      お菓子作り：簡単なものより手間のかかるものの方が好きです。<br>
+      <img src="./アイスケーキ.JPG" id="img_okashi">
+      <img src="./フルーツ寒天.JPG" id="img_okashi">
+      <img src="./ケーキ.jpg" id="img_okashi"><br>
+    </div>
+
+    <h2 id="contact"><a id="contactlink">CONTACT</a></h2>
+    <div>mail: hiroka.umetsu@uec.ac.jp<br>
+      研究室: 〒182-8585  東京都調布市調布ヶ丘1-5-1 西3号館 3F 302号室
+    </div>
+
+    <div id="map">
+    <iframe
+      src="https://www.google.com/maps?output=embed&z=17&ll=35.6585,139.5402&q=東京都調布市富士見町２丁目+西3号館"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe></div>
+  </main>
+  
+  <footer>
+    <p>©︎ Hiroka Umetsu 2021</p>
+  </footer>
+
+  <div id="page_top"><a href="#"></a></div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+<head>内に書き込む
+＊cssを指定する
+<link rel="stylesheet" href="mypage.css" >
+*ページのアイコンを設定する
+<link rel="icon" type="img/png" href="fav.png">
+
+参考サイト
+HTML5でWEBページを作る場合の基本テンプレ
+https://colers.jp/snippet/html5-template
+ヘッダーについて
+https://rico-notes.com/programming/html/header-design/
